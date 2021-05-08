@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, 520px);
         grid-auto-rows: minmax(56px, auto);
+        justify-content: center;
         column-gap: 50px;
         row-gap: 36px;
         // align-items: center;
