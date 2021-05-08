@@ -1,0 +1,89 @@
+.footer {
+    min-height: 201px;
+    background-color: #25333c;
+    &__wrapper {
+        padding: 25px 10px;      
+        display: grid;
+        grid-template-columns: 528px 345px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main {
+        display: grid;
+        grid-template-columns: 68px 414px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    &__logo {
+        img {
+            width: 68px;
+            height: 71px;
+        }
+    }
+    &__name {
+        color: #ffffff;
+    }
+    &__call {
+        text-align: right;
+    }
+    &__contact {
+        display: grid;
+        grid-template-columns: 170px 168px;
+        justify-content: space-between;
+        column-gap: 16px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    &__phone {
+        width: 595px;
+        font-size: 19px;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
+    } 
+
+    &__line {
+        width: 1171px;
+        height: 1px;
+        opacity: 0.3;
+        border: 1px solid #ffffff;
+    }
+    &__legal {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__sign, &__site {
+        font-size: 13px;
+        font-weight: 300;
+        color: #ffffff;
+        opacity: 0.6;
+    }
+    &__policy {
+        font-size: 13px;
+        font-weight: 300;
+        margin-left: -210px;
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color: $main-color;
+            text-decoration: underline;
+        } 
+    }
+    &__site {
+        img {
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.scheme {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding: 51px 0 6px 0;
+    &__wrapper {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, 255px );
+        // justify-content: space-between;
+        // align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        padding: 0 0 40px 40px;
+        width: 255px;
+        text-align: center;
+
+    }
+    &__title {
+        padding-bottom: 25px;
+    }
+    &__subtitle {
+        padding-top: 5px;
+        &-pt {
+            padding-top: 1px;
+        }
+    }
+}

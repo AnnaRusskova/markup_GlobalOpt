@@ -1,0 +1,83 @@
+.feedback {
+    min-height: 438px;
+    padding: 62px 0 79px 0;
+    background: url('../img/contacts_bg.jpg') center 1%/cover no-repeat;
+    &__block {
+        margin: 0 auto;
+        width: 896px;
+        height: 297px;
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+    }
+    &__descr {
+        width: 896px;
+        height: 68px;
+        background-color: #25333c;
+        text-align: center;
+    }
+    &__title {
+        padding-top: 10px;
+    }
+    &__subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__form {
+        padding: 15px 40px 20px 40px;
+        outline: unset;
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: 47px 73px 45px;
+        gap: 5px;
+        .btn__feedback {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            margin: 0 auto;
+            margin-top: 11px;
+        }    
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 47px;
+            padding: 17px 10px 17px 31px;
+            border-radius: 28px;
+            border: 1px solid #898989;
+            font-size: 13px;
+            background-color: #ffffff;
+            font-weight: 300;
+            color: #101010;
+            outline: none;
+        } 
+        .error {
+            border: 1px solid red;
+        }
+        label.error {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: $main-color;
+        }
+    }
+    &__message {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        textarea {   
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 17px 10px 17px 31px;
+            border-radius: 5px;
+            border: 1px solid #898989;
+            font-size: 13px;
+            background-color: #ffffff;
+            font-weight: 300;
+            color: #616467;
+        }
+    }
+}

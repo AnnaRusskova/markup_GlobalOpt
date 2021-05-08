@@ -1,0 +1,26 @@
+.advantages {
+    padding: 57px 0 73px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        padding-top: 31px;
+        // padding-right: 35px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 520px);
+        grid-auto-rows: minmax(56px, auto);
+        column-gap: 50px;
+        row-gap: 36px;
+        // align-items: center;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 62px 1fr;
+        column-gap: 10px;
+    }
+    &__title {
+        padding-bottom: 11px;
+    }
+    // &__img {
+    //     width: 62px;
+    //     height: 65px;
+    // }
+}

@@ -1,0 +1,29 @@
+.service {
+    padding: 53px 0 56px 0;
+    &__subtitle {
+        margin: 20px auto 0 auto;
+        width: 883px;
+        text-align: center;
+    }
+    &__wrapper {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 360px);
+        column-gap: 30px;
+        grid-auto-rows: minmax(60px, auto);
+        row-gap: 50px;
+        justify-content: center;
+    }
+    &__img {
+        width: 360px;
+        height: 210px;
+    }
+    &__title {
+        padding-top: 28px;
+        text-align: center;
+    }
+    &__descr {
+        padding-top: 10px;
+        text-align: center;
+    } 
+}

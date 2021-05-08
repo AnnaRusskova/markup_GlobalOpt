@@ -1,0 +1,41 @@
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    text-align: center;
+    &-fz12 {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    &-fz14 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+    }
+    &-fz16 {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    &-fz19 {
+        font-size: 19px;
+        color: #ffffff;
+    }
+    &-fz21 {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #2e2e2e;
+    }
+    &-fz28 {
+        font-size: 28px;
+        line-height: 23px;
+        font-weight: 400;
+        color: #3a3a3a;
+        text-align: center;
+    }
+    
+}
