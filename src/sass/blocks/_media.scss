@@ -36,6 +36,29 @@
                 width: 360px;
             }
         }
+        .agent {
+            &__subtitle {
+                width: 100%;
+            }
+        }
+        .price {
+            &__wrapper {
+                grid-template-columns: repeat(auto-fit, 261px);
+                justify-content: space-around;
+                row-gap: 30px;
+
+            }
+            &__card {
+                &_last {
+                    grid-column: 2/ 3;
+                }
+            }
+        }
+        .consultation {
+            &__wrapper {
+                width: 940px;
+            }
+        }
 }
 
 
@@ -157,6 +180,17 @@
             }
         }
     }
+    .consultation {
+        &__wrapper {
+            width: 730px;
+            grid-template-columns: repeat(auto-fit,238px);
+        }
+        &__input {
+            label.error {
+                font-size: 11px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -209,6 +243,48 @@
             width: 360px;
         }
     }
+    .agent {
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+    .price {
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__cost {
+            font-size: 24px;
+        }
+        &__card {
+            &_last {
+                grid-column: unset;
+            }
+        }
+    }
+    .consultation {
+        &__wrapper {
+            width: 540px;
+            height: 300px;
+            grid-template-columns: 238px;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+        &__input {
+            padding-top: 0;
+            label.error {
+                font-size: 11px;
+                margin-bottom: 1px;
+            }
+        &__wrapper {
+            width: 730px;
+            grid-template-columns: repeat(auto-fit,238px);
+            }
+        }
+        &__btn {
+            top: 275px;
+        }
+        
+    }
 }
 
 @media (max-width: 576px) {
@@ -254,6 +330,22 @@
         }
         &__img {
             height: unset;
+        }
+    }
+    .price {
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__cost {
+            font-size: 20px;
+        }
+    }
+    .consultation {
+        &__wrapper {
+            width: 90%;
+        }
+        &__title {
+            font-size: 22px;
         }
     }
 }

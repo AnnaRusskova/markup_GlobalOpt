@@ -124,7 +124,7 @@ $(document).ready(function() {
 		//гамбургер
 		window.addEventListener('DOMContentLoaded', () => {
 			const menu = document.querySelector('.header__menu'),
-				  menuItem = document.querySelectorAll('.menu__item'),
+				  menuItem = document.querySelectorAll('.header__item'),
 				  hamburger = document.querySelector('.hamburger');
 		
 			hamburger.addEventListener('click', () => {
