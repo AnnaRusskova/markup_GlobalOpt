@@ -10,15 +10,6 @@ $(document).ready(function() {
 						breakpoint: 768,
 						settings: {
 							arrows: false,
-							centerMode: true,
-							centerPadding: '40px',
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
 							dots: true,
 							centerMode: true,
 							centerPadding: '40px',
@@ -65,7 +56,7 @@ $(document).ready(function() {
 								required: "Пожалуйста, введите свою почту",
 								email: "Неправильно введен адрес почты"
 							}
-						}
+					}
 			});
 		}
 			
@@ -85,24 +76,15 @@ $(document).ready(function() {
 			$('.overlay, #calculation').fadeIn('slow');
 		});
 
-		// $('[data-modal=consultation]').on('click', function() {
-		// 	$('.overlay, #thanks').fadeIn('slow');
-		// });
-
-		// $('[data-modal=feedback]').on('click', function() {
-		// 	$('.overlay, #thanks').fadeIn('slow');
-		// });
-
 		$('.modal__close').on('click', function() {
 			$('.overlay, #callback, #calculation, #thanks').fadeOut('fast');
 		});
-
 
 		// Отправка инфо из форм
 		$('form').submit(function(e) {
 		e.preventDefault(); /* отмена автоматической перезагрузки страницы по умолчанию */
 
-		if (!$(this).valid()) { //добавила
+		if (!$(this).valid()) {
             return;
         }
 
@@ -119,7 +101,6 @@ $(document).ready(function() {
 		});
 		return false;
 		});
-
 
 		//гамбургер
 		window.addEventListener('DOMContentLoaded', () => {
@@ -139,7 +120,6 @@ $(document).ready(function() {
 				});
 			});
 		});
-
 });
 
 
